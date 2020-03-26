@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">ProyectoFinal</string>
+    <string name="app_name">FAST FOOD</string>
+    <string name="todo">TODO</string>
+    <string name="Sandwiches">SANDWICHES</string>
+    <string name="Sobre_nostros">SOBRE NOSOTROS</string>
+    <string name="logotipo">TODO</string>
 </resources>
