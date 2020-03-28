@@ -79,7 +79,7 @@ public class ListaSandwiches extends AppCompatActivity {
         private String precio;
         private String descripcion;
 
-        public sandwich(int cod, String nombre, int idImagen, String precio, String descripcion) {
+        sandwich(int cod, String nombre, int idImagen, String precio, String descripcion) {
             this.cod = cod;
             this.nombre = nombre;
             this.idImagen = idImagen;
