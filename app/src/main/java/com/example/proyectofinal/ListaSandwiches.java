@@ -36,11 +36,12 @@ public class ListaSandwiches extends AppCompatActivity {
                 LinearLayout.LayoutParams.WRAP_CONTENT);
 
         //SANDWICHES
-        lista_sandwiches.add(new sandwich(0, "Mechado", 1, "4000", "Un sandwich Mechado"));
-        lista_sandwiches.add(new sandwich(1, "Chacarero", 1, "3500", "Un sandwich Chacarero"));
-        lista_sandwiches.add(new sandwich(2, "Barros luco", 1, "5000", "Un sandwich Barros luco"));
-        lista_sandwiches.add(new sandwich(3, "Chemilico", 1, "3500", "Un sandwich Chemilico"));
-        lista_sandwiches.add(new sandwich(4, "Churrasco italiano", 1, "3000", "Un sandwich Churrasco italiano"));
+        lista_sandwiches.add(new sandwich(0, "Mechado",R.drawable.mechado, "4000", "Un sandwich Mechado"));
+        lista_sandwiches.add(new sandwich(1, "Chacarero", R.drawable.chacarero, "3500", "Un sandwich Chacarero"));
+        lista_sandwiches.add(new sandwich(2, "Barros luco", R.drawable.barros_luco, "5000", "Un sandwich Barros luco"));
+        lista_sandwiches.add(new sandwich(3, "Chemilico", R.drawable.chemilico, "3500", "Un sandwich Chemilico"));
+        lista_sandwiches.add(new sandwich(4, "Churrasco italiano", R.drawable.italianio, "3000", "Un sandwich Churrasco italiano"));
+
 
         for(sandwich c:lista_sandwiches){
             Button cb = new Button(this);
@@ -54,12 +55,14 @@ public class ListaSandwiches extends AppCompatActivity {
                     String nombre_sandwich=lista_sandwiches.get(v.getId()).nombre;
                     String precio_sandwich=lista_sandwiches.get(v.getId()).precio;
                     String descripcion_sandwich = lista_sandwiches.get(v.getId()).descripcion;
+                    int  imagen_sandwich = lista_sandwiches.get(v.getId()).idImagen;
 
                     Intent intent = new Intent(v.getContext(), DetallesSandwich.class);
                     intent.putExtra("nombre_sandwich",nombre_sandwich);
                     intent.putExtra("precio_sandwich",precio_sandwich);
                     intent.putExtra("descripcion_sandwich", descripcion_sandwich);
-
+                    intent.putExtra("descripcion_sandwich", descripcion_sandwich);
+                    intent.putExtra("imagen_sandwich", imagen_sandwich);
 
                     startActivityForResult(intent, 0);
                 }
@@ -71,15 +74,15 @@ public class ListaSandwiches extends AppCompatActivity {
     //CLASE CON LOS PARAMETRO DE SANDWICH(MODELO)
     private static class sandwich{
         private int cod;
-        private int IdImagen;
         private String nombre;
+        private int idImagen;
         private String precio;
         private String descripcion;
 
-        private sandwich(int cod, String nombre, int idImagen, String precio, String descripcion) {
+        public sandwich(int cod, String nombre, int idImagen, String precio, String descripcion) {
             this.cod = cod;
             this.nombre = nombre;
-            this.IdImagen = IdImagen;
+            this.idImagen = idImagen;
             this.precio = precio;
             this.descripcion = descripcion;
         }
