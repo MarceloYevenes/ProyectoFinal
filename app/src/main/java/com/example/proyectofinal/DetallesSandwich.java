@@ -30,7 +30,7 @@ public class DetallesSandwich extends AppCompatActivity {
         nombre_sandwich = intent.getStringExtra("nombre_sandwich");
         precio_sandwich = intent.getStringExtra("precio_sandwich");
         descripcion_sandwich = intent.getStringExtra("descripcion_sandwich");
-        imagen_sandwich = intent.getIntExtra("imagen_sandwich",1);
+        imagen_sandwich = intent.getIntExtra("imagen_sandwich",R.drawable.no_disponible);
 
         Log.i("infoo",""+imagen_sandwich);
         //TITULO AL ACTIVITY
