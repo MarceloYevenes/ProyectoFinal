@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import java.util.Objects;
+
 public class SobreNosotros extends AppCompatActivity {
 
     @Override
@@ -11,7 +13,7 @@ public class SobreNosotros extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sobre_nosotros);
         //FLECHA PARA VOLVER ATRÁS
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
 
     }

@@ -1,11 +1,12 @@
 package com.example.proyectofinal;
 
-import android.content.Intent;
+
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Objects;
 
 public class ListaSandwiches extends AppCompatActivity {
 
@@ -16,7 +17,7 @@ public class ListaSandwiches extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lista_sandwiches);
         //BOTON APPBAR
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         this.setTitle(R.string.mi_titulo);
 
 
