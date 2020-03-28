@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SobreNosotros" />
+        <activity android:name=".DetallesSandwich" />
         <activity android:name=".ListaSandwiches"/>
         <activity android:name=".MainActivity">
 

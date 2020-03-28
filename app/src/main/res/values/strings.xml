@@ -14,5 +14,7 @@
         ES FAST FOOT!!
     </string>
     <string name="mi_titulo">Sandwiches</string>
+    <string name="vacio"></string>
+    <string name="precio">Precio:</string>
 
 </resources>
