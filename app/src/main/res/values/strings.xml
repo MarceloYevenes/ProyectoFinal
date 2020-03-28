@@ -6,11 +6,13 @@
     <string name="logotipo">TODO</string>
     <string name="todo_1">TODO</string>
     <string name="sobre_nosotros">
-        SOMOS UNA EMPRESA DE LA \n
-        REGIÓN CON MAS DE 10 AÑOS \n
-        DE EXPERIENCIA REALIZANDO \n
-        SANDWICHES LOS MEJORES DE \n
-        LA ZONA. SI NO CHORREA NO \n
+        SOMOS UNA EMPRESA DE LA\n
+        REGIÓN CON MAS DE 10 AÑOS\n
+        DE EXPERIENCIA REALIZANDO\n
+        SANDWICHES LOS MEJORES DE\n
+        LA ZONA. SI NO CHORREA NO\n
         ES FAST FOOT!!
     </string>
+    <string name="mi_titulo">Sandwiches</string>
+
 </resources>
