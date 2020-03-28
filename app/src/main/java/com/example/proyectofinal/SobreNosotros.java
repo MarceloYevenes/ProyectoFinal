@@ -10,5 +10,18 @@ public class SobreNosotros extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sobre_nosotros);
+        //FLECHA PARA VOLVER ATRÁS
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+    }
+
+    //FUNCIÓN PARA VOLVER ATRÁS
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return false;
     }
 }
+
+
