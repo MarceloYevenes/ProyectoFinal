@@ -36,11 +36,11 @@ public class ListaSandwiches extends AppCompatActivity {
                 LinearLayout.LayoutParams.WRAP_CONTENT);
 
         //SANDWICHES
-        lista_sandwiches.add(new sandwich(0, "Mechado",R.drawable.mechado, "4000", "Un sandwich Mechado"));
-        lista_sandwiches.add(new sandwich(1, "Chacarero", R.drawable.chacarero, "3500", "Un sandwich Chacarero"));
-        lista_sandwiches.add(new sandwich(2, "Barros luco", R.drawable.barros_luco, "5000", "Un sandwich Barros luco"));
-        lista_sandwiches.add(new sandwich(3, "Chemilico", R.drawable.chemilico, "3500", "Un sandwich Chemilico"));
-        lista_sandwiches.add(new sandwich(4, "Churrasco italiano", R.drawable.italianio, "3000", "Un sandwich Churrasco italiano"));
+        lista_sandwiches.add(new sandwich(0, getString(R.string.Mechado),R.drawable.mechado, getString(R.string.Mechado_precio), getString(R.string.Mechado_descripcion)));
+        lista_sandwiches.add(new sandwich(1, getString(R.string.Chacarero), R.drawable.chacarero, getString(R.string.Chacarero_precio), getString(R.string.Chacarero_descripcion)));
+        lista_sandwiches.add(new sandwich(2, getString(R.string.Barros_luco), R.drawable.barros_luco, getString(R.string.Barros_luco_precio), getString(R.string.Barros_luco_descripcion)));
+        lista_sandwiches.add(new sandwich(3, getString(R.string.Chemilico), R.drawable.chemilico, getString(R.string.Chemilico_precio), getString(R.string.Chemilico_descripcion)));
+        lista_sandwiches.add(new sandwich(4, getString(R.string.Churrasco_italiano), R.drawable.italianio, getString(R.string.Churrasco_italiano_precio), getString(R.string.Churrasco_italiano_descripcion)));
 
 
         for(sandwich c:lista_sandwiches){

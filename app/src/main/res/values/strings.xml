@@ -14,7 +14,32 @@
         ES FAST FOOT!!
     </string>
     <string name="mi_titulo">Sandwiches</string>
-    <string name="vacio"></string>
+    <string name="vacio">""</string>
     <string name="precio">Precio:</string>
+    <string name="detalle">Detalle Sandwich </string>
+    <string name="peso">$</string>
+
+    <string name="Mechado">Mechado</string>
+    <string name="Chacarero">Chacarero</string>
+    <string name="Barros_luco">Barros luco</string>
+    <string name="Chemilico">Chemilico</string>
+    <string name="Churrasco_italiano">Churrasco italiano</string>
+
+    <string name="Mechado_precio">4000</string>
+    <string name="Chacarero_precio">3500</string>
+    <string name="Barros_luco_precio">5000</string>
+    <string name="Chemilico_precio">3500</string>
+    <string name="Churrasco_italiano_precio">4500</string>
+
+
+    <string name="Mechado_descripcion">Sándwich extra grande con nuestra deliciosa carne mechada en pan amasado con palta y mayonesa de la casa.</string>
+    <string name="Chacarero_descripcion">Chacarero es un sándwich chileno hecho con porotos verdes/ejotes, tomate y carne. Delicioso.</string>
+    <string name="Barros_luco_descripcion">El Barros Luco es un sándwich que lleva carne a la plancha y queso caliente</string>
+    <string name="Chemilico_descripcion">El chemilico es un sandwich de carne de res (churrasco) con huevo frito</string>
+    <string name="Churrasco_italiano_descripcion">La carne es lomo de vacuno, paltas frescas, tomate y pan a elección, puede usar el clásico frica (tipo hamburguesa), marraqueta, u otro.</string>
+
+
+
+
 
 </resources>
