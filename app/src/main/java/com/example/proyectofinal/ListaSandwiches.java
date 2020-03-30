@@ -2,7 +2,9 @@ package com.example.proyectofinal;
 
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -32,7 +34,7 @@ public class ListaSandwiches extends AppCompatActivity {
         contenedor = findViewById(R.id.contenedor);
 
         //PARAMETROS DE ESTILO//
-        new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT);
 
         //SANDWICHES
@@ -48,7 +50,11 @@ public class ListaSandwiches extends AppCompatActivity {
             //cb.setLayoutParams(lp);
             cb.setText(c.nombre);
             cb.setId(c.cod);
+            cb.setTextColor(Color.WHITE);
+            params.setMargins(40,40,40,40);
+            cb.setBackgroundColor(Color.rgb(255,136,0));
             contenedor.addView(cb);
+            cb.setLayoutParams(params);
             cb.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
